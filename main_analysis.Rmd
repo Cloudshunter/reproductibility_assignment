@@ -1,0 +1,18 @@
+---
+title: "Main Analysis"
+author: "Sam"
+date: "2022-10-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+stroop_data <- read.table("https://raw.githubusercontent.com/Lakens/Stroop/master/
+stroop.txt", sep = "\t", header = TRUE)
+
+write.table(stroop_data, file = "stroop.csv", quote=F, row.names=F)
+```
+
